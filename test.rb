@@ -1,15 +1,59 @@
 #text = ["the", "quick", "brown", "fox", "jumps", "over", "the", "lazy", "dog"]
 #text.uniq!
 #puts text
-#this displays which words aren't used multiple times
-#i want the opposite of this method; i want to display repeats
+#this removes all repeats
 
 # text = ["the", "the", "quick", "brown", "fox", "jumps", "over", "the", "lazy", "lazy", "dog"]
 # repeats = text.find_all { |x| text.count(x) > 1 }
-# repeats.sort!
-# puts repeats.to_s
-#shows repeated words in sorted order; THIS WORKS
+#this shows the repeated words in the array
 
+# repeats.sort!
+# puts repeats
+# this shows repeated words in alphabetical order
+
+# "something here words".split
+# turns text into an array
+
+# text = gets.chomp
+# text_array = text.split
+# print text_array
+# turns user input into an array
+
+# ['Cat', 'Dog', 'Bird'].include?('Dog')
+# gives true or false about inclusion of string in array
+
+# a = ['cat','dog','horse']
+# if a.index('dog')
+#     puts "dog exists in the array"
+# end
+# if/then statement about inclusion of string in array
+
+# textarray = ["the", "good", "boy"]
+# goodtimes = textarray.count("good")
+# if textarray.index("good")
+# 	then puts "You have used the weak adjective 'good' #{goodtimes} times. Consider replacing."
+# end
+# this shows both whether a string shows up and how many times it shows up
+
+#  a = ['Cat', 'Dog', 'Bird']
+#  a.count("Dog")
+# how many times a certain string shows up in array
+
+# textarray = ["cat", "dog", "dog"]
+# norepeats = textarray.uniq
+# norepeatslength = norepeats.length
+# textlength = textarray.length
+# if norepeatslength != textlength
+# 	then puts "there are repeats"
+# end
+# identifies whether there are repeats in an array
+
+# text = "My name is Kelly. I play volleyball. My favorite color is green."
+# splittext = text.split(".")
+# puts splittext
+# turns text into array based off sentences
+
+	#ATTEMPTS AT TURNING TEXT INTO AN ARRAY#
 # puts "Type in your piece.  When finished, press enter on an empty line."
 # text = []
 # input = ' '
@@ -36,43 +80,3 @@
 # end
 
 #File.readlines("text_file.txt").map{ |l| l.chop }.reject{ |l| l == '' }
-
-# puts text
-# end
-#DOES NOT WORK
-
-# text = gets.chomp.split
-# puts text
-#DOES NOT WORK
-#"something here words".split does work
-
-# text = gets.chomp
-# text_array = text.split
-# print text_array
-# THIS WORKS
-
-# 	['Cat', 'Dog', 'Bird'].include?('Dog')
-
-# 	a = ['cat','dog','horse']
-# if a.index('dog')
-#     puts "dog exists in the array"
-# end
-
-#  a = ['Cat', 'Dog', 'Bird']
-#  a.count("Dog")
-
-# textarray = ["the", "good", "boy"]
-# goodtimes = textarray.count("good")
-# if textarray.index("good")
-# 	then puts "You have used the weak adjective 'good' #{goodtimes} times. Consider replacing."
-# end
-#THIS WORKS
-
-# textarray = ["the", "the", "dog"]
-# norepeats = textarray.uniq
-# norepeatslength = norepeats.length
-# textlength = textarray.length
-# if norepeatslength != textlength
-# 	then puts "there are repeats"
-# end
-#THIS WORKS
